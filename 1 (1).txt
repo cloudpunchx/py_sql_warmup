@@ -1,0 +1,31 @@
+WARMUP:
+
+1. Create a new Git/GitHub named python_sql_warmup
+2. Create a new local DB named python_sql_warmup
+3. Configure your debugger, create your venv, create your .gitignore and install the mariadb package using pip
+4. In your DB, create the following tables:
+  4.1. sales_person
+    4.1.1. id (PK)
+    4.1.2. name
+  4.2. item
+    4.2.1. id (PK)
+    4.2.2. name
+    4.2.3. price
+  4.3. item_sale
+    4.3.1. id (PK)
+    4.3.2. sales_person_id (FK)
+    4.3.3. item_id (FK)
+5. Add in at least 3 sales_person and 5 item rows
+6. Create a stored procedure that will return all sales_persons names and id's
+7. Create a stored procedure that will return all item id's, names and prices
+8. Create a stored proecdure that will take 2 arguments, an item_id and sales_person_id and INSERT a new row into item_sale
+9. In your python, create a function that will: 
+  9.1. show the user all available sales people for them to pick
+  9.2. prompt the user to pick a sales person
+10. Create a function that takes one argument, a sales_person id and  will:
+  10.1. show the user all available items for sale
+  10.2. prompt the user to pick an item for sale
+  10.3. Create a row in item_sale when the user picks an item
+11. Create a function that will infinitley prompt the user to either buy an item with a sales person, or quit the app
+12. Take a full DB backup
+13. Add, commit and push your code
